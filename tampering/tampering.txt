@@ -1,0 +1,1 @@
+The tampering file enables code injection, as it does not ensure the request contents is treated as a string. This violates the principle of integrity. In order to prevent this, we replace any symbols that could inject code to invalidate the attack/injection. We could also ensure the input is treated strictly as a string.

@@ -1,1 +1,3 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The vulnerability lies in how the system checks for administrative privileges/identification. A bad actor could spoof the input so they are granted admin priviliges. The secure version includes the use of a cookie to verify the session/user.
