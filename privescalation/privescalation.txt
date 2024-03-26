@@ -1,0 +1,2 @@
+The code is vulnerable as we check user privileges by a simple index lookup. Furthermore, we do not verify the new role input, and this allows mal actors to escalate privileges for themselves or others.
+The secure version uses the sessionId as opposed to a userId passed by a user. This enables a higher level of authentication.
