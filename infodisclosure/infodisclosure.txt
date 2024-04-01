@@ -1,5 +1,6 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
-Line 26 - user input is not being sanitized, and sensitive information can be disclosed with simple attacks. the secure version prevents this vulnerability by sanitizing the input and removing any potential symbols that lead to code injection.
+Line 26 - user input is not being sanitized, and sensitive information can be disclosed with simple attacks. The secure version prevents this vulnerability by sanitizing the input and removing any potential symbols that lead to code injection.
 Which CIA property does tampering violate?
+This violates the property of confidentiality because it enables the disclosure of potentially sensitive information.
 What additional security mechanisms can you incorporate?
-we can incorporate an authentication service and hashing in order to prevent such attacks
+We can incorporate an authentication service in order to prevent such attacks. We can also ensure we sanitize all inputs as another line of defense.

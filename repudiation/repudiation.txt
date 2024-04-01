@@ -1,2 +1,4 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
+The log is being produced without sanitizing the user inputs. This can lead to code injection and potentially information disclosure.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+We should store the log in a more secure and persistent form. Simply having the log be a variable within the application does not ensure longetivy of our log. We can also implement some automated auditing procedures to actually check the contents of our logs.
